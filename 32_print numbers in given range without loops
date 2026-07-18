@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void print_num(int a,int b){
+  if(a>b){
+    return;
+  }
+printf("%d ",a);
+print_num(a+1,b);
+}
+int main(){
+int a,b;
+printf("Enter the first number:");
+scanf("%d",&a);
+printf("Enter the last number:");
+scanf("%d",&b);
+print_num(a,b);
+return 0;
+}
